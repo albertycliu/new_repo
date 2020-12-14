@@ -5,5 +5,5 @@ from flask_cors import CORS
 CORS(app, resources=r'/*')
 @app.route('/test')
 def vue():
-
+    print("some test")
     return render_template('test.html',**locals())
